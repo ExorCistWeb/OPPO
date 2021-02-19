@@ -1,0 +1,547 @@
+*{
+    margin: 0;
+    padding: 0;  
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Noto Serif', serif;
+    text-decoration: none;
+}
+body,html{
+   max-width: 1920px;
+   margin: 0 auto;
+   padding: 0;
+   background: #f9f9f9; 
+   
+}
+.first-screen{
+    width: 100%;
+    height: 950px;
+    background-image: url(../img/fon.png);
+    background-size: cover;
+    background-position: center center;
+}
+.first-screen .header{
+    max-width: 1100px;
+    height: 52px;
+    margin: 0 auto;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.first-screen .header .menu{
+    display: flex;
+}
+.first-screen .header .menu .logo{
+    margin-left: 106px;
+    margin-right: 79px;
+}
+.first-screen .header .menu li{
+    list-style: none;
+    color: #fff;
+    margin: 0 20px;
+}
+.first-screen .header .menu li a{
+    font-family: 'Comfortaa', cursive;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.863);
+    font-weight: 400;
+    font-size: 14px;
+    transition: all 1s;
+}
+.first-screen .header .menu li a:hover{
+    color: #ffffff;
+}
+.first-screen .header .menu li a .fa-search{
+    margin-right: 16px;
+}
+.first-screen .header .menu li .auth{
+    margin: 0;
+}
+.first-screen .header .menu li .reg{
+    margin: 0;
+}
+.first-screen .first-title{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    margin-top: 523px;
+}
+.first-screen .first-title h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.first-screen .first-title a{
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px 35px;
+    background-color: #333333;
+    border: #fff solid 1px;
+    transition: ease .5s;
+}
+.first-screen .first-title a:hover{
+    color: #333;
+    background-color: #fff; 
+}
+.first-screen .first-title{
+    margin-bottom: 80px;
+}
+.first-screen .first-brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.first-screen .first-brands img{
+    width: 160px;
+    height: 60px;
+}
+.first-screen .first-brands hr{
+    width: 60px;
+    height: 0px;
+    border: none;
+    border: 1px solid #fff;
+    -webkit-transform: rotate(90deg); 
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.second-screen {
+    width: 100%;
+    height: 0 auto;
+    padding-bottom: 120px;
+}
+.second-screen h3{
+    font-family: 'Comfortaa', cursive;
+    color: #333333;
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+    padding: 100px 0 15px 0;
+}
+.second-screen h2{
+    color: #333333;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 0 50px 0;
+
+}
+.second-screen .tabs {
+    max-width: 1110px;
+    height: 0 auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.second-screen .tabs>input[type="radio"] {
+    display: none;
+}
+
+.second-screen .tabs>input[type="radio"]:checked+label {
+    background-color: #333333;
+    color: #fff;
+    cursor: default;
+}
+
+.second-screen .tabs>.s-s-cotegory {
+    display: none;
+    padding-top: 10px;
+}
+
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3,
+#tab-btn-4:checked~#content-4,
+#tab-btn-5:checked~#content-5,
+#tab-btn-6:checked~#content-6 {
+    display: block;
+}
+
+.second-screen .tabs>label {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 165px;
+    height: 60px;
+    border: 1px solid #D6D6D6;
+    font-family: 'Comfortaa', cursive;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.second-screen .tabs>label:first-of-type {
+    margin-left: 0;
+}
+.second-screen .tabs .s-s-cotegory > div{
+    display: inline-flex;
+    width: 350px;
+    height: 280px;
+    margin: 5px;
+}
+.second-screen .tabs .s-s-cotegory div > h2{
+    display: flex;
+    font-family: 'Comfortaa', cursive;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    align-items: flex-end;
+    margin: 0 auto;
+    margin-bottom: -15px;
+}
+.second-screen .tabs  .second-screen-category-rings{
+    background-image: url(../img/tovar1.png);
+}
+.second-screen .tabs  .second-screen-category-earrings{
+    background-image: url(../img/tovar2.png);
+}
+.second-screen .tabs  .second-screen-category-pendants{
+    background-image: url(../img/tovar3.png);
+}
+.second-screen .tabs  .second-screen-category-cufflinks{
+    background-image: url(../img/tovar4.png);
+}
+.second-screen .tabs  .second-screen-category-bracelets{
+    background-image: url(../img/tovar5.png);
+}
+.second-screen .tabs  .second-screen-category-watches{
+    background-image: url(../img/tovar6.png);
+}
+.our-salon{
+    width: 100%;
+    height: 541px;
+    text-align: center;
+    background-image: url(../img/our-salon.png);
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+.our-salon h4{
+    font-family: 'Comfortaa', cursive;
+    font-size: 19px;
+    font-weight: 400;
+    padding: 100px 0 15px 0;
+}
+.our-salon h2{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.our-salon p{
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 60px;
+    max-width: 730px;
+    line-height: 1.5;
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+.our-salon .o-s-btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    padding: 15px 35px;
+    border: 1px solid #D6D6D6;
+    font-family: 'Comfortaa', cursive;
+    background: #fff;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.40s ease;
+    cursor: pointer;
+}
+.our-salon .o-s-btn:hover{
+    font-size: 22px;
+    font-weight: 500;
+}
+.blog {
+    width: 100%;
+    height: 0 auto;
+    text-align: center;
+    display: block;
+    padding-bottom: 150px;
+}
+.blog > h3{
+    font-family: 'Comfortaa', cursive;
+    color: #333;
+    font-size: 21px;
+    font-weight: 400;
+    margin: 120px 0 15px 0;
+}
+.blog > h2{
+    color: #333;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+.blog .blog-div{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1110px;
+    height: 0 auto;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+.blog .blog-div .bl-img{
+    width: 350px;
+    height: 370px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.blog .blog-div .bl-img h3{
+    font-family: 'Comfortaa', cursive;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-bottom: 35px;
+}
+.blog .blog-div .blog-img-1{
+    background-image: url(../img/blog-1.png);
+    background-size: cover;
+    background-position: center center;
+}
+.blog .blog-div .blog-img-2{
+    background-image: url(../img/blog-2.png);
+    background-size: cover;
+    background-position: center center;
+}
+.blog .blog-div .blog-img-3{
+    background-image: url(../img/blog-3.png);
+    background-size: cover;
+    background-position: center center;
+}
+.blog > a{
+    font-family: 'Comfortaa', cursive;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 15px 35px;
+}
+.subscribe {
+    width: 100%;
+    height: 478px;
+    background-image: url(../img/subscribe.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+.subscribe > h3{
+    font-family: 'Comfortaa', cursive;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 400;
+    padding: 100px 0 15px 0;
+}
+.subscribe > h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    letter-spacing: 1.5px;
+}
+.subscribe .sub-div{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.subscribe .sub-div .sub-list .s-b-title{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7.5px 0;
+}
+.subscribe .sub-div .sub-list{
+    margin-right: 80px;
+}
+.subscribe .sub-div .sub-list .s-b-title h3{
+    font-family: 'Comfortaa', cursive;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+.subscribe .sub-div .s-b-input{
+    background-color: #fff;
+    padding: 20px 22px;
+    display: inline-flex;
+}
+.subscribe .sub-div .s-b-input > input{
+    padding: 15px 20px;
+    max-width: 200px;
+    height: 0 auto;
+    border-radius: unset;
+    border: 1px solid #D6D6D6;
+    margin-right: 15px;
+}
+.subscribe .sub-div .s-b-input > button{
+    padding: 15px 35px;
+    border-radius: unset;
+    font-family: 'Comfortaa', cursive;
+    background-color: #333;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    border: 1px solid #333;
+    transition: all 0.40s ease-in-out;
+}
+.subscribe .sub-div .s-b-input > button:hover{
+    background-color: rgb(173, 173, 173);
+    border: 1px solid rgb(173, 173, 173);
+}
+.subscribe .sub-div .s-b-input > input{
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+}
+.subscribe .sub-div .s-b-input > input:focus{
+    outline: none;
+    outline: 1px solid #333;
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+}
+.subscribe .sub-div .s-b-input > input::placeholder{
+    font-family: 'Comfortaa', cursive;
+    color:rgba(51, 51, 51, 0.5);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer{
+    width: 1110px;
+    height: 0 auto;
+    padding: 80px 0 0px 0;
+    margin: 0 auto;
+}
+.footer > hr{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #333;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.footer .f-body{
+    display: flex;
+    justify-content: center;
+}
+.footer .f-body .colump{
+    width: 255px;
+    height: 0 auto;
+    margin: 0 15px;
+}
+.footer .f-body .colump > h2{
+    font-family: 'Comfortaa', cursive;
+    color:#333;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+}
+.footer .f-body .colump > hr{
+    margin: 10px 0 30px 0;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+
+.footer .f-body .colump-1 > a{
+    margin-bottom: 25px;
+    display: flex;
+    font-family: 'Comfortaa', cursive;
+    color:#333;
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer .f-body .colump-2 > p{
+    font-family: 'Comfortaa', cursive;
+    color:#333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.footer .f-body .colump-2 .f-pay{
+    margin-top: 20px;
+}
+.footer .f-body .colump-2 .f-pay img{
+    margin-right: 20px;
+}
+.footer .f-body .colump-3 .f-tel{
+    align-items: center;
+    margin-bottom: 15px;
+    display: flex;
+}
+.footer .f-body .colump-3 .f-tel > img{
+    margin-right: 20px;
+}
+.footer .f-body .colump-3 .f-tel > a{
+    font-family: 'Comfortaa', cursive;
+    color:#333;
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer .f-body .colump-3 .f-tel > a:hover{
+    font-family: 'Comfortaa', cursive;
+    color:#333;
+    border-bottom: 1px solid #333;
+}
+.footer .f-body .colump-4 > p{
+    font-family: 'Comfortaa', cursive;
+    color:#333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.footer .f-body .colump-4 .f-social{
+    margin-top: 25px;
+}
+.footer .f-body .colump-4 .f-social img{
+    margin-right: 20px;
+}
+.footer .f-head{
+    display: flex;
+    width: 1110px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.footer .f-head > a, p{
+    font-family: 'Comfortaa', cursive;
+    color:#333;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.footer .f-head > p{
+    font-family: 'Comfortaa', cursive;
+    color:#333;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.footer .f-head > a:hover{
+    border-bottom: 1px solid #333;
+}
